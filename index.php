@@ -277,9 +277,9 @@ session_start();
     <div class="header">
         <div class="logo">Shadowra<span>.AI</span></div>
         <div class="header-right">
-            <a href="subscribe.php" class="btn btn-premium">👑 Get Premium</a>
+            <a href="user/subscribe.php" class="btn btn-premium">👑 Get Premium</a>
             <?php if(isset($_SESSION['user_id'])): ?>
-                <a href="user.php" class="user-menu">👤 <?php echo htmlspecialchars($_SESSION['username']); ?></a>
+                <a href="user/user.php" class="user-menu">👤 <?php echo htmlspecialchars($_SESSION['username']); ?></a>
             <?php else: ?>
                 <a href="login.php" class="btn btn-login">Sign In</a>
             <?php endif; ?>
@@ -425,7 +425,7 @@ session_start();
         function renderCards() {
             const grid = document.getElementById('cardsGrid');
             grid.innerHTML = characters.map(char => `
-                <div class="card" onclick="location.href='chat.php?character=${encodeURIComponent(char.title)}'">
+                <div class="card" onclick="location.href='user/chat.php?character=${encodeURIComponent(char.title)}'">
                     <div class="card-image" style="background: ${colors[char.image]}"></div>
                     <span class="card-tag">For You</span>
                     <div class="card-content">
