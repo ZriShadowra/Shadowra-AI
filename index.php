@@ -6,7 +6,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpicyChat.AI - AI Character Chat</title>
+    <title>Shadowra.AI - AI Character Chat</title>
     <style>
         * {
             margin: 0;
@@ -275,7 +275,7 @@ session_start();
 </head>
 <body>
     <div class="header">
-        <div class="logo">🌶️ SPICYCHAT<span>.AI</span></div>
+        <div class="logo">Shadowra<span>.AI</span></div>
         <div class="header-right">
             <a href="subscribe.php" class="btn btn-premium">👑 Get Premium</a>
             <?php if(isset($_SESSION['user_id'])): ?>
